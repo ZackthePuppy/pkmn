@@ -4,9 +4,7 @@
 
 <section>
     <div class="text-center">
-        <h1 class="my-3">Search</h1>
-        <input type="text" class="input input-bordered">
-        <button class="btn btn-neutral">Neutral</button>
+        @livewire('berry')
     </div>
 </section>
 
