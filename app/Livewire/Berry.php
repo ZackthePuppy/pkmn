@@ -17,15 +17,18 @@ class Berry extends Component
     }
 
     public function mount(){
-        // $this->api = new PokeApi;
+        $api = new PokeApi;
+        // $api->pokemon('pikachu')
+        $this->pokemon = json_decode($api->pokemon('pikachu'), true);
     }
 
     public function searchBerry(){
         $api = new PokeApi;
         // $api->pokemon('pikachu')
-        $this->pokemon = json_decode($api->gameGeneration('1'), true);
+        $this->pokemon = json_decode($api->pokemon('pikachu'), true);
         $this->formattedPokemon = json_encode($this->pokemon, JSON_PRETTY_PRINT);
-        dd($this->pokemon);
+        // dd($this->pokemon['stats'][5]['stat']['name']);
+        // dd($this->pokemon);
     }
     
 }

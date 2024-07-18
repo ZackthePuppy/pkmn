@@ -3,8 +3,10 @@
 @section('content')
 
 <section>
-    <div class="text-center">
+    <div class="container mx-auto text-center">
+        
         @livewire('berry')
+
     </div>
 </section>
 
