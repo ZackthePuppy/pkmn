@@ -17,7 +17,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
     @livewireScripts
 
@@ -25,9 +25,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
-<body>
+<body class="text-white font-chalk">
     @include('layouts.header')
-    @yield('content')
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('layouts.footer')
 </body>
 
 </html>

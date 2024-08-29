@@ -6,10 +6,11 @@ module.exports = {
         themes: ["luxury"],
     },
     theme: {
+        fontFamily: {
+            chalk: ["chalk", "sans-serif"],
+            sonysketch: ["sonysketch", "sans-serif"],
+        },
         extend: {
-            fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-            },
         },
     },
     variants: {

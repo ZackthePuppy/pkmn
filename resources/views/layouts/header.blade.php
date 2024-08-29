@@ -1,7 +1,7 @@
-<header>
+<header class="sticky top-0">
 
-    <div class="navbar bg-base-100">
-        <div class="flex-none w-28">
+    <div class="justify-between navbar bg-base-100">
+        <div class="w-1/6">
             <div class="drawer">
                 <input id="my-drawer" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
@@ -16,20 +16,21 @@
                 </div>
                 <div class="drawer-side">
                     <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="min-h-full p-4 menu w-80 bg-base-200 text-base-content">
+                    <ul class="min-h-full p-4 menu w-80 bg-base-200">
                         <!-- Sidebar content here -->
+                        <li><a href="{{Route('home')}}">Home</a></li>
                         <li><a href="{{Route('berry')}}">Berries</a></li>
-                        <li><a>Sidebar Item 2</a></li>
+                        {{-- <li><a href="{{Route('pokemon')}}">Pokemon</a></li> --}}
 
                     </ul>
                 </div>
             </div>
             <div>
-                <a href="{{Route('home')}}" class="text-xl btn btn-ghost">Dex</a>
+                <a href="{{Route('home')}}" class="text-xl"><img src="{{ asset('images/logo.png') }}" alt=""></a>
             </div>
         </div>
         
-        <div class="flex-auto">
+        <div class="w-1/2">
             <div class="mx-auto">
                 <h3>
                     @if (Route::is('home'))
@@ -39,7 +40,7 @@
             </div>
         </div>
         
-        <div class="flex-none w-28">
+        <div class="w-1/6">
             <button class="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">

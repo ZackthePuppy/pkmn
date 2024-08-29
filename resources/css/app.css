@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "chalk";
+    src: url("../../public/fonts/KgSketch.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "sonysketch";
+    src: url("../../public/fonts/sonysketch.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
